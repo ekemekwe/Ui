@@ -145,10 +145,10 @@
     .input-flex-container {
       flex-wrap: wrap;
       justify-content: center;
-      width: 400px;
+      width: 300px;
       height: auto;
       margin-top: 15vh;
-      margin-left: 0;
+      margin-left: 10px;
       padding-bottom: 30px; }
     input, .dot-info {
       width: 60px;
@@ -170,7 +170,7 @@
       border-radius: 50%;
       z-index: 0;
       left: 0;
-      margin-left: -70px;
+      margin-left: -60px;
       background-color: #AEB6BF; }
       .dot-info span.year {
         top: 0;
