@@ -1,0 +1,90 @@
+<div className="mf-input-wrapper">
+<label className="mf-input-label" htmlFor="mf-input-text-746c7287">
+${ parent.decodeEntities("Name") } 					<span className="mf-input-required-indicator"></span>
+</label>
+
+<input
+type="text"
+className="mf-input "
+id="mf-input-text-746c7287"
+name="mf-first-name"
+placeholder="${ parent.decodeEntities("Name") } "
+		onInput=${parent.handleChange}
+aria-invalid=${validation.errors['mf-first-name'] ? 'true' : 'false'}
+ref=${el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
+	/>
+
+<${validation.ErrorMessage}
+errors=${validation.errors}
+name="mf-first-name"
+as=${html`<span className="mf-error-message"></span>`}
+/>
+
+</div>
+
+</div>
+</div>
+<div className="elementor-element elementor-element-566a8919 elementor-widget elementor-widget-mf-email" data-id="566a8919" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
+<div className="elementor-widget-container">
+
+<div className="mf-input-wrapper">
+<label className="mf-input-label" htmlFor="mf-input-email-566a8919">
+${ parent.decodeEntities("Email") } 					<span className="mf-input-required-indicator"></span>
+</label>
+
+<input
+type="email"
+className="mf-input "
+id="mf-input-email-566a8919"
+name="mf-email"
+placeholder="${ parent.decodeEntities("Email") } "
+		onInput=${parent.handleChange}
+aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false'}
+ref=${el => parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
+	/>
+
+<${validation.ErrorMessage}
+errors=${validation.errors}
+name="mf-email"
+as=${html`<span className="mf-error-message"></span>`}
+/>
+
+</div>
+
+</div>
+</div>
+<div className="elementor-element elementor-element-31f1988 elementor-widget elementor-widget-mf-textarea" data-id="31f1988" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-comment&quot;}" data-widget_type="mf-textarea.default">
+<div className="elementor-widget-container">
+
+<div className="mf-input-wrapper">
+<label className="mf-input-label" htmlFor="mf-input-text-area-31f1988">
+${ parent.decodeEntities("Message") } 					<span className="mf-input-required-indicator"></span>
+</label>
+
+<textarea className="mf-input mf-textarea " id="mf-input-text-area-31f1988"
+name="mf-comment" 
+placeholder="${ parent.decodeEntities("Message") } "
+cols="30" rows="10"
+		onInput=${ parent.handleChange }
+aria-invalid=${validation.errors['mf-comment'] ? 'true' : 'false'}
+ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el) }
+	></textarea>
+
+<${validation.ErrorMessage}
+errors=${validation.errors}
+name="mf-comment"
+as=${html`<span className="mf-error-message"></span>`}
+/>
+
+</div>
+
+</div>
+</div>
+<div className="elementor-element elementor-element-857b514 mf-btn--center elementor-widget elementor-widget-mf-button" data-id="857b514" data-element_type="widget" data-widget_type="mf-button.default">
+<div className="elementor-widget-container">
+	<input type="hidden" name="mf-hidden-input-name" className="mf_hidden_input_class" value="mf_hidden_input_value" ref=${parent.setDefault} />
+<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
+<button type="submit" className="metform-btn metform-submit-btn " id="" disabled="${parent.state.form_res}">
+<span>${ parent.decodeEntities("Send Message") } </span>
+</button>
+</div>
